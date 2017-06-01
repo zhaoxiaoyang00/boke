@@ -1,0 +1,106 @@
+@import url(../css/react.css);
+#out{
+    width: 500px;
+    margin: 0 auto;
+}
+.son1{
+     animation: play 1.5s infinite linear;
+     a{
+         animation: fl 1.5s linear infinite;
+     }
+}
+.son2{
+     animation: play 1.5s infinite 0.3s linear;
+     a{
+         animation: fl 1.5s linear 0.3s infinite;
+     }
+}
+.son3{
+     animation: play 1.5s infinite 0.5s linear;
+     a{
+         animation: fl 1.5s linear 0.5s infinite;
+     }
+}
+.son4{
+     animation: play 1.5s infinite 0.7s linear;
+     a{
+         animation: fl 1.5s linear 0.7s infinite;
+     }
+}
+#outSide {
+    width: 80px;
+    height: 211px;
+    background: #006699;
+    float: left;
+    margin-right: 20px;
+    border-radius: 0 0 50px 50px;
+    #son {
+        width: 80px;
+        height: 34px;
+        background:burlywood;
+        position: relative;
+//       animation: play 2s infinite linear;
+         border-radius: 15px;
+         z-index: 99999;
+        a {
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 104px;
+            background: orchid;
+            left: 35px;
+            top: 34px;
+            border-radius: 9px;
+            
+//          animation: fl 2s linear infinite;
+            em{
+             display: block;
+             width: 15px;
+             height: 15px;
+             background: white;
+             border-radius: 50%;
+             position: absolute;
+             top: 89px;
+         }
+        }
+    }
+    #circle {
+        width: 80px;
+        height: 80px;
+        border: 15px solid red;
+        border-radius: 50%;
+        position: absolute;
+        top: 132px;
+        border-top: 15px solid indianred;
+        border-left: 15px solid darkolivegreen;
+        border-bottom: 15px solid hotpink;
+        border-right: 15px solid khaki;
+    }
+}
+@keyframes fl{
+    25%{
+        transform: rotateZ(-20deg);
+        transform-origin: center top;        
+    }
+    50%{
+        transform: rotateZ(0deg);
+        transform-origin: center top;        
+    }
+    75%{
+        transform: rotateZ(20deg);
+        transform-origin: center top;      
+    }
+    100%{
+        transform: rotateZ(0deg);
+        transform-origin: center top;      
+    }
+}
+@keyframes play {
+    0% {
+        transform: translate(0,0px);
+        
+    }
+    50% {
+        transform: translate(0,80px);
+    }
+}
